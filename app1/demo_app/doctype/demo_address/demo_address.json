@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:employee_code-Address-{######}",
+ "creation": "2024-08-20 20:15:26.176737",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address_section",
+  "employee_code",
+  "street",
+  "area",
+  "citytown",
+  "state",
+  "pincode"
+ ],
+ "fields": [
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Street",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "citytown",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City/Town",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pincode",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee code",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 15:05:41.117836",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "demo_address",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

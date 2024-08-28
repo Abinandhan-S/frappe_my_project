@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 15:20:25.830691",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Activity Name",
+   "options": "NSS\nNCC\nAndroid Developement Club\nTamilan Club\nRotery Club"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-20 16:24:18.816695",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Activity",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

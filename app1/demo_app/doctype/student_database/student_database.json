@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 15:14:37.021349",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_information_section",
+  "roll_no",
+  "name1",
+  "age",
+  "height",
+  "weight",
+  "mobile_number",
+  "section",
+  "sports_person",
+  "activity",
+  "parents_detailno",
+  "sports"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "roll_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roll No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "length": 10
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Section",
+   "options": "1st\n2nd\n3rd\n4th\n5th\n6th\n7th\n8th\n9th\n10th\n11th\n12th"
+  },
+  {
+   "default": "0",
+   "fieldname": "sports_person",
+   "fieldtype": "Check",
+   "label": "Sports Person"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Activity",
+   "options": "Activity"
+  },
+  {
+   "fieldname": "parents_detailno",
+   "fieldtype": "Table",
+   "label": "Parents Detail/no",
+   "options": "Parents details"
+  },
+  {
+   "depends_on": "eval:doc.sports_person==1",
+   "fieldname": "sports",
+   "fieldtype": "Table MultiSelect",
+   "label": "Sports",
+   "mandatory_depends_on": "eval:doc.sports_person==1",
+   "options": "Sports lists"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 12:14:00.441994",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Student Database",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Saved"
+  }
+ ]
+}

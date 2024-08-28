@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-08-22 13:43:15.108543",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "image",
+  "upload_image",
+  "check"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "check"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "upload_image"
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Attach Image",
+   "label": "upload image"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Long Text",
+   "label": "Label",
+   "precision": "4"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-23 15:41:07.378677",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Demo Single Doctype",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

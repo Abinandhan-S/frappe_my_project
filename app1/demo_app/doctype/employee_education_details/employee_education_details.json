@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 15:52:31.133210",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institution_name",
+  "degreequalification",
+  "field_of_study",
+  "year_of_passing",
+  "percentagecgpa"
+ ],
+ "fields": [
+  {
+   "fieldname": "degreequalification",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Degree/Qualification",
+   "options": "Secondary School Leaving Certificate(SSLC)\nHigher Secondary Certificate (HSC)\nBachelor of Accountancy (BAcc)\nBachelor of Architecture (BArch)\nBachelor of Business Administration (BBA)\nBachelor of Commerce (BComm)\nBachelor of Computer Science (BCS)\nBachelor of Computer Application (BCA)\nBachelor of Civil Law (BCL)\nBachelor of Divinity (BDiv)\nBachelor of Economics (BEc)\nBachelor of Education (BEd)\nBachelor of Engineering (BEng)\nBachelor of Fine Arts (BFA)\nBachelor of Laws (LLB)\nBachelor of Letters (BLitt)\nBachelor of Music (BM)\nBachelor of Management Studies (BMS)\nBachelor of Pharmacy (BPharm)\nBachelor of Philosophy (BPhil)\nBachelor of Science (BS)\nBachelor of Science in Nursing (BSN)\nBachelor of Social Work (BSW)\nBachelor of Technology (BTech)\nBachelor of Theology (BTh)\nBachelor of Civil Law (BCL)\nLicentiate in Sacred Theology (STL)\nMagister Juris (MJur)\nMaster of Business Administration (MBA)\nMaster of Counselling (MCouns)\nMaster of Divinity (MDiv)\nMaster of Education (MEd)\nMaster of Engineering (MEng)\nMaster of Fine Arts (MFA)\nMaster of Laws (LLM)\nMaster of Letters (MLitt)\nMaster of Medicine (MMed)\nMaster of Management Studies (MMS)\nMaster of Philosophy (MPhil)\nMaster of Public Administration (MPA)\nMaster of Public Health (MPH)\nMaster of Research (MRes)\nMaster of Sacred Theology (STM)\nMaster of Science in Nursing (MSN)\nMaster of Social Work (MSW)\nMaster of Studies (MSt)\nMaster of Surgery (ChM or MS)\nMaster of Technology (Mtech)\nProfessional Science Masters (PSM)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "field_of_study",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Field of Study",
+   "options": "Business Administration\nBusiness Management\nCivil Engineering\nCommunication\nComputer Programming\nComputer Science\nCounseling\nCriminal Justice\nEducation\nEnglish\nFilm\nFinance\nGraphic Design\nHealth Informatics\nHealth Sciences\nHistory\nHuman Resources\nInformation Technology\nMarketing\nMathematics\nNursing\nOrganizational Psychology\nPolitical Science\nPublic Policy\nSocial Work\nSupply Chain and Logistics"
+  },
+  {
+   "fieldname": "institution_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year_of_passing",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year of Passing",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "percentagecgpa",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percentage/CGPA",
+   "precision": "2",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-22 10:42:59.383164",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee Education Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

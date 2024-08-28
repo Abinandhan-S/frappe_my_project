@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-23 09:57:27.041477",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "age",
+  "date_of_birth",
+  "address",
+  "upload_image",
+  "section_break_higs",
+  "image_tcjj",
+  "column_break_jucy",
+  "column_break_zsxu",
+  "column_break_harj"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Attach Image",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "section_break_higs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.upload_image==1",
+   "fieldname": "image_tcjj",
+   "fieldtype": "Image",
+   "options": "upload_image"
+  },
+  {
+   "fieldname": "column_break_jucy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zsxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_harj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2024-08-23 10:03:06.932301",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Demo Virtual Doctype",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

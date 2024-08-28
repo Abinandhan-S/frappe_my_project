@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 15:26:47.272957",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_hicx",
+  "father_name",
+  "father_mob_no",
+  "occupation"
+ ],
+ "fields": [
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "father_mob_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father Mob No",
+   "length": 10
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Occupation",
+   "length": 10
+  },
+  {
+   "fieldname": "column_break_hicx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-20 18:13:09.596034",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Parents details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

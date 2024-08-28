@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_designation",
+ "creation": "2024-08-22 11:38:17.705902",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_designation",
+  "description",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_employee_designation"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee designation",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Employee designation"
+  },
+  {
+   "fieldname": "parent_employee_designation",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Parent Employee designation",
+   "options": "Employee designation"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-08-23 11:56:09.108769",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee designation",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_employee_designation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_code",
+ "creation": "2024-08-21 17:54:14.509999",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_c7sx",
+  "employee_code",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "date_of_birth",
+  "gender",
+  "designation",
+  "phone",
+  "current_address",
+  "permanent_address",
+  "terms_and_condition",
+  "signature",
+  "password",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_c7sx",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Code",
+   "options": "Employee Database",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.current_address",
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.permanent_address",
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.middle_name",
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee_code.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Employee designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_code.phone",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "For Software Development and Consulting services\nThis Service Agreement (\u201cAgreement\u201d) shall apply and govern the Statement of Work(s), project, letter of intent or any other document (\u201cSOW\u201d) executed between Persistent Systems Limited or any of its affiliates [specifically identified in the SOW] (\u201cConsultant/Consultant\u201d) and Customer, for the purpose of providing professional services (\u201cServices\u201d) or deliverables (\u201cDeliverable\u201d) for software development and consulting.\n\nPayments:\nPayment will be made by Customer within 15 days upon receipt of an invoice. In the event there is a delay in payment for more than 5 days from the due date, the Customer shall be liable to pay an interest of 1.5% per month or maximum permitted by applicable law, whichever is less, on the delayed payments from the due date of payment. Consultant shall be relieved of its obligations under this Agreement in the event of non-payment of the Fees or expenses due and shall retain the rights in the Services for which the amount is outstanding. Consultant will provide the Hardware and Software stated in Annexure \u2013 01, as part of its standard package if required while providing the offshore Services from Consultant\u2019s location(s) in India. Contractor\u2019s relationship with Company is that of an independent contractor, and nothing in this Agreement will be construed to create a joint partnership, joint venture, agency, or employer-employee relationship.\n\nApproval Process:\nCustomer will have seven (7) days following receipt of the Services or Deliverable (\u201cAcceptance Period\u201d), to complete acceptance tests as per acceptance criteria agreed in the SOW (\u201cAcceptance Criteria\u201d). If no notice of non-conformance to Acceptance Criteria is reported during Acceptance Period, Deliverables or Services are deemed accepted by the Customer.\n\nConfidentiality:\nConfidential information shall mean any information disclosed by one party to the other party, in any form including without limitation documents, business plans, source code, software, technical/ financial/ marketing/ customer/ business information, specifications, analysis, designs, drawings, data, computer programs, any information relating to personnel or Affiliates of a party and include information disclosed by third parties at the direction of a Disclosing Party and marked as confidential within 15 days of such disclosure. Confidential Information shall however, exclude any information which (i) is/ was publicly known or comes into public domain; (ii) is received by the Receiving Party from a third party, without breach of this Agreement; (iii) was already in the possession of Receiving Party, without confidentiality restrictions, at the time of disclosure by the Disclosing Party; (iv) is permitted for disclosure by the Disclosing Party in writing; (v) independently developed by the Receiving Party without use of Confidential Information; (vi) is required to be disclosed by the Receiving Party pursuant to any order or requirement from court, administrative or governmental agency, provided that the Receiving Party shall give the Disclosing Party prompt written notice of such order or requirement and an opportunity to contest or seek an appropriate protective order. The Receiving Party agrees not to use any Confidential Information for any purpose except for conducting business with the Disclosing Party, or otherwise agreed in writing.\n\nIntellectual Property Rights:\nCustomer shall own all right, title and interest in and to the Deliverables. The rights, title and interest in and to the Deliverables shall be granted to the Customer only upon receipt of full payment by the Consultant. To the extent that the Deliverables incorporates Consultant pre-existing intellectual property (\u201cConsultant Pre-existing IP\u201d), and such Consultant Pre-Existing IP are necessarily required for the proper functioning of the Deliverables Consultant grants to Customer a perpetual, non-exclusive, worldwide, transferable, royalty-free license to use such Consultant Pre-Existing IP solely along with the Deliverables.\n\nWarranties:\nExcept as expressly stated in this Agreement, the parties disclaim all warranties of any kind, implied, statutory, or in any communication between them, including without limitation, the implied warranties of merchantability, non-infringement, title, and fitness for a particular purpose.\n\nLimitation of Liability:\nThe total liability of the parties under this Agreement (whether in contract, tort (including negligence)) shall not exceed the fees paid to Consultant hereunder. The parties disclaim any indirect, special, consequential or incidental damages or loss of revenue or business profits, however caused, even if advised of the possibility of such damages. The foregoing limitations of liability will apply notwithstanding the failure of essential purpose of any limited remedy herein.\n\nTermination:\nEither party may terminate the Agreement upon sixty (60) days\u2019 notice to the other party. Either party may terminate this Agreement immediately if the other party breaches the terms of this Agreement and the breach remain uncured for 30 days from the date of receipt of notice. In case of termination, the Consultant shall be paid for the Services provided on a pro-rata basis.\n\nNon-Hire and Non-Solicitation:\nDuring the term of this Agreement and for one (1) year thereafter, neither party will directly or indirectly recruit, solicit or induce any personnel, Consultant or advisor of the other party to terminate his or her relationship with such other party without the prior written permission of the other party.\n\nForce Majeure:\nNeither party shall be liable for any failure or delay in fulfilling the terms of this Agreement due to fire, strike, war, civil unrest, terrorist action, government regulations, act of Nature or other causes which are unavoidable and beyond the reasonable control of the party claiming force majeure. This provision shall not be construed as relieving either party from its obligation to pay any sum due to the other party.\n\nSubcontracting:\nConsultant may subcontract the services to any of its affiliates.\n\nGoverning Law and Dispute Resolution:\nThe terms of this Agreement shall be governed, interpreted and construed in accordance with the laws of State of Delaware, United States if the Customer is located in United States of America; laws of England & Wales if the Customer is located in Europe. All disputes, differences, claims and demands arising under or pursuant to this Agreement shall be referred to arbitration and shall be adjudicated in accordance with the rules of International Chamber of Commerce (I.C.C) in English language in the State of California if the Customer is located in United States of America; in London, England if the Customer is located in Europe; in Pune, India if the Customer is in India; in Singapore if the Customer is located in Asia (except India) or Australia.\n\nEntire Agreement:\nThis Agreement shall constitute the complete agreement between the parties respecting the subject matter. This Agreement may not be extended, amended, terminated, or superseded except by agreement in writing between the parties. This Agreement supersedes all previous agreements between the Consultant and the Customer, whether oral or written, regarding subject matter hereof, standard terms and conditions of a purchase order or an invoice or any similar document whether hosted on party\u2019s website or otherwise, shall be ineffective. There are no intended third party beneficiaries to this Agreement. Each Agreement may be executed in one or more counterparts (including scanned copies), all of which when signed and taken together constitute a single agreement between the parties.\n\nAnnexure-01\nStandard Hardware and Software for Development and Testing\n\nConsultant will provide the following Hardware and Software as part of its standard package if required for offshore services. In case any Hardware / Software are required in addition to this the same shall be paid by Customer.\n\n",
+   "fieldname": "terms_and_condition",
+   "fieldtype": "Long Text",
+   "label": "Terms  and Condition",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-26 10:34:51.773636",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

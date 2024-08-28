@@ -1,0 +1,290 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_code",
+ "creation": "2024-08-21 14:14:03.361362",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_tab",
+  "section_break_unab",
+  "profile_picture",
+  "upload_image",
+  "column_break_ofwv",
+  "column_break_ppjj",
+  "column_break_heva",
+  "column_break_hzbv",
+  "section_break_yovk",
+  "employee_code",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "email",
+  "phone",
+  "mob_no",
+  "date_of_birth",
+  "date_of_joining",
+  "current_address",
+  "permanent_address",
+  "gender",
+  "employment_type",
+  "designation",
+  "experienced",
+  "sports_person",
+  "sports",
+  "id_proof",
+  "education_details_tab",
+  "education_qualification",
+  "achievement",
+  "skills",
+  "department_tab",
+  "department",
+  "company_details_tab",
+  "previous_company_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Information"
+  },
+  {
+   "default": "EMP-",
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "label": "Employee Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Email",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Phone",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Employment Type",
+   "options": "\nFull-time\nPart-time\nContract\nIntern",
+   "reqd": 1
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Attach Image",
+   "label": "Upload Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile_picture",
+   "fieldtype": "Image",
+   "label": "Profile Picture",
+   "max_height": "50 em",
+   "options": "upload_image"
+  },
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Previous Company Details"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Table",
+   "label": "Department",
+   "options": "Employee department link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Employee designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department_tab",
+   "fieldtype": "Tab Break",
+   "label": "Department"
+  },
+  {
+   "fieldname": "education_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education Details"
+  },
+  {
+   "fieldname": "education_qualification",
+   "fieldtype": "Table",
+   "label": "Education Qualification",
+   "options": "Employee Education Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "achievement",
+   "fieldtype": "Long Text",
+   "label": "Achievement"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Small Text",
+   "label": "Skills"
+  },
+  {
+   "depends_on": "eval:doc.experienced==1",
+   "fieldname": "previous_company_details",
+   "fieldtype": "Table",
+   "label": "Previous Company Details",
+   "mandatory_depends_on": "eval:doc.experienced==1",
+   "options": "Employee Previous Company details"
+  },
+  {
+   "default": "0",
+   "fieldname": "experienced",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Experienced"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Table",
+   "label": "ID Proof",
+   "options": "Employee ID proof"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Small Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ppjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_heva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hzbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yovk",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "sports_person",
+   "fieldtype": "Check",
+   "label": "Sports Person"
+  },
+  {
+   "depends_on": "eval:doc.sports_person==1",
+   "fieldname": "sports",
+   "fieldtype": "Table MultiSelect",
+   "in_standard_filter": 1,
+   "label": "Sports",
+   "mandatory_depends_on": "eval:doc.sports_person==1",
+   "options": "Sports lists"
+  },
+  {
+   "fieldname": "column_break_ofwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_unab",
+   "fieldtype": "Section Break",
+   "label": "Profile Picture"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 11:53:45.855137",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee Database",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_code"
+}

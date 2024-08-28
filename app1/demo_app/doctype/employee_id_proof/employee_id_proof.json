@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 11:30:05.299115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id_name",
+  "attach_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "id_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID name"
+  },
+  {
+   "fieldname": "attach_id",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-22 11:30:52.445064",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee ID proof",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

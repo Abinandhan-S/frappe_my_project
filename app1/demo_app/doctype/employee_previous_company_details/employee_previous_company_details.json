@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 16:17:05.379552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_details",
+  "company_name",
+  "designation",
+  "previous_salary",
+  "company_joining_date",
+  "company_last_date",
+  "company_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_details",
+   "fieldtype": "Heading",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Board of Directors or Owners\nCEO\nC-Suite Executives\nVice Presidents\nDirectors\nManagers\nTeam Leaders\nSoftware Engineer\nAssociates\nJunior Software Developer\nSenior Software Developer\nIntern\nNone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_salary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Previous Salary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Company Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_joining_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Company Joining Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_last_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Company Last Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-21 18:47:39.114424",
+ "modified_by": "Administrator",
+ "module": "Demo_App",
+ "name": "Employee Previous Company details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
